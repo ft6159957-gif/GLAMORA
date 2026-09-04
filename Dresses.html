@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamora | Dresses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="home-header">
+
+    <div class="home-logo">GLAMORA</div>
+
+    <button class="menu-btn" onclick="openMenu()">
+        ☰ Menu
+    </button>
+
+</header>
+
+
+<!-- Side Menu -->
+<div class="side-menu" id="sideMenu">
+
+    <button class="close-btn" onclick="closeMenu()">
+        ✕
+    </button>
+
+    <h2>GLAMORA</h2>
+
+    <a href="index.html">Home</a>
+    <a href="dresses.html">Dresses</a>
+    <a href="bags.html">Bags</a>
+    <a href="shoes.html">Shoes</a>
+    <a href="sunglasses.html">Sunglasses</a>
+    <a href="watches.html">Watches</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+
+
+<!-- Hero Section -->
+<section class="dress-hero">
+
+    <div class="dress-hero-content">
+
+        <p>THE GLAMORA DRESS COLLECTION</p>
+
+        <h1>Your Dress<br>Your Style</h1>
+
+        <span>
+            Discover elegant dresses, beautiful designs and
+            timeless pieces made to complete your look
+            and express your unique personality.
+        </span>
+
+         <a href="#dresses" class="dress-btn">
+                  Explore Collection →
+</a>
+
+    </div>
+
+</section>
+
+
+<!-- Collection Heading -->
+<section class="dress-heading" id="dresses">
+
+    <p>OUR DRESS COLLECTION</p>
+
+    <h2>Designed For Your Style</h2>
+
+    <span>
+        From elegant everyday dresses to luxurious statement
+        pieces, find the perfect dress for every occasion.
+    </span>
+
+</section>
+
+
+<!-- Filters -->
+<div class="dress-filters">
+
+    <button>All Dresses</button>
+    <button>Casual</button>
+    <button>Party Wear</button>
+    <button>Luxury</button>
+
+</div>
+
+
+<!-- Dress Products -->
+<section class="dress-grid">
+
+
+    <div class="dress-card">
+
+        <div class="dress-image">
+
+            <img src="c:\Users\HC\Desktop\fatima\image\Banner.png\Dresse.jpg\251E4637-1.webp" alt="Elegant Dress">
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="dress-info">
+
+            <p>Signature Collection</p>
+
+            <h3>Elegant Evening Dress</h3>
+
+            <strong>$15000</strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="dress-card">
+
+        <div class="dress-image">
+
+            <img src="c:\Users\HC\Desktop\fatima\image\Banner.png\Dresse.jpg\images (1).jpg" alt="Floral Dress">
+
+            <span>POPULAR</span>
+
+        </div>
+
+        <div class="dress-info">
+
+            <p>Everyday Collection</p>
+
+            <h3>Floral Summer Dress</h3>
+
+            <strong>$12000</strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="dress-card">
+
+        <div class="dress-image">
+
+            <img src="c:\Users\HC\Desktop\fatima\image\Banner.png\Dresse.jpg\images.jpg" alt="Luxury Dress">
+
+        </div>
+
+        <div class="dress-info">
+
+            <p>Luxury Collection</p>
+
+            <h3>Luxury Party Dress</h3>
+
+            <strong>$4000</strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="dress-card">
+
+        <div class="dress-image">
+
+            <img src="c:\Users\HC\Desktop\fatima\image\Banner.png\Dresse.jpg\images (2).jpg" alt="Casual Dress">
+
+        </div>
+
+        <div class="dress-info">
+
+            <p>Fashion Collection</p>
+
+            <h3>Chic Casual Dress</h3>
+
+            <strong>$10000</strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="dress-card">
+
+        <div class="dress-image">
+
+            <img src="c:\Users\HC\Desktop\fatima\image\Banner.png\Dresse.jpg\images (3).jpg" alt="Pink Dress">
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="dress-info">
+
+            <p>Glamora Signature</p>
+
+            <h3>Elegant Pink Dress</h3>
+
+            <strong>$20000</strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="dress-card">
+
+        <div class="dress-image">
+
+            <img src="c:\Users\HC\Desktop\fatima\image\Banner.png\Dresse.jpg\2556dfde68983e69a579459197cd7bfa.jpg" alt="Black Dress">
+
+        </div>
+
+        <div class="dress-info">
+
+            <p>Classic Collection</p>
+
+            <h3>Classic Black Dress</h3>
+
+            <strong>$25000</strong>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- Banner -->
+<section class="dress-banner">
+
+    <div>
+
+        <p>STYLE THAT DEFINES YOU</p>
+
+        <h2>
+            Your Dress.<br>
+            Your Statement.
+        </h2>
+
+       <a href="#dresses" class="discover-btn">Discover More →</a>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="dress-footer">
+
+    <h2>GLAMORA</h2>
+
+    <p>
+        Discover your style. Define your elegance.
+    </p>
+
+    <p class="dress-copy">
+        © 2026 Glamora Dress Collection. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script>
+
+    function openMenu() {
+        document.getElementById("sideMenu").classList.add("open");
+    }
+
+    function closeMenu() {
+        document.getElementById("sideMenu").classList.remove("open");
+    }
+
+</script>
+
+
+</body>
+</html>

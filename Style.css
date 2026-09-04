@@ -1,0 +1,3031 @@
+/* =================================
+   GLAMORA HOME PAGE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f3f3;
+    color: #222;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.home-header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D8B7B5;
+    border-bottom: 1px solid #eee;
+}
+
+.home-logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+    border: none;
+    background: white;
+    color: #222;
+    padding: 12px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background: #b05a72;
+    color: white;
+}
+
+
+/* =================================
+   SIDE MENU
+================================= */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    padding: 70px 35px;
+    z-index: 1000;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.side-menu h2 {
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+.side-menu a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #b05a72;
+    padding-left: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.home-hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background-color: #D8B7B5;
+}
+
+.home-content {
+    max-width: 580px;
+    color: white;
+}
+
+.home-content > p {
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.home-content h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
+
+.home-content span {
+    display: block;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #b05a72;
+    color: white;
+}
+
+
+/* =================================
+   CATEGORIES
+================================= */
+
+.home-categories {
+    padding: 80px 7%;
+    text-align: center;
+    background: #f8f3f3;
+}
+
+.home-categories > p {
+    color: #b05a72;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.home-categories h2 {
+    font-size: 42px;
+    margin: 12px 0 45px;
+}
+
+
+/* =================================
+   CATEGORY GRID
+================================= */
+
+.category-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* CATEGORY CARD */
+
+.category-card {
+    background: white;
+    text-decoration: none;
+    color: #222;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+
+/* CATEGORY IMAGE */
+
+.category-card img {
+    width: 100%;
+    height: 350px;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.category-card:hover img {
+    transform: scale(1.06);
+}
+
+.category-card h3 {
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+/* =================================
+   BOTTOM BANNER
+================================= */
+
+.home-banner {
+    min-height: 400px;
+    padding: 80px 9%;
+    display: flex;
+    align-items: center;
+    background-color: #D8B7B5;
+    color: white;
+}
+
+.home-banner p {
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.home-banner h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 15px 0 25px;
+}
+
+.home-banner a {
+    display: inline-block;
+    padding: 13px 27px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-banner a:hover {
+    background: #b05a72;
+    color: white;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.home-footer {
+    text-align: center;
+    padding: 55px 20px;
+    background: #191719;
+    color: white;
+}
+
+.home-footer h2 {
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.home-footer p {
+    color: #bbb;
+    margin-top: 8px;
+}
+
+.home-footer p:last-child {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .home-header {
+        padding: 20px 5%;
+    }
+
+    .home-hero h1 {
+        font-size: 48px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home-header {
+        padding: 18px 5%;
+    }
+
+    .home-logo {
+        font-size: 22px;
+    }
+
+    .home-hero {
+        min-height: 450px;
+        padding: 60px 7%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content span {
+        font-size: 15px;
+    }
+
+    .home-categories h2 {
+        font-size: 32px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card img {
+        height: 320px;
+    }
+
+    .home-banner h2 {
+        font-size: 36px;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f7f2ed;
+color: #222;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.home-header {
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 60px;
+background: #f7f2ed;
+}
+
+.home-logo {
+font-size: 28px;
+font-weight: bold;
+letter-spacing: 4px;
+}
+
+.menu-btn {
+background: #222;
+color: white;
+border: none;
+padding: 12px 22px;
+font-size: 15px;
+cursor: pointer;
+}
+
+.menu-btn:hover {
+background: #555;
+}
+
+/* =========================
+SIDE MENU
+========================= */
+
+.side-menu {
+position: fixed;
+top: 0;
+right: -320px;
+width: 320px;
+height: 100vh;
+background: #fff;
+padding: 30px;
+z-index: 1000;
+box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+transition: 0.4s ease;
+}
+
+.side-menu.open {
+right: 0;
+}
+
+.side-menu h2 {
+margin: 45px 0 30px;
+letter-spacing: 3px;
+}
+
+.side-menu a {
+display: block;
+text-decoration: none;
+color: #222;
+font-size: 17px;
+padding: 14px 0;
+border-bottom: 1px solid #eee;
+}
+
+.side-menu a:hover {
+padding-left: 8px;
+}
+
+.close-btn {
+position: absolute;
+right: 25px;
+top: 20px;
+background: none;
+border: none;
+font-size: 25px;
+cursor: pointer;
+}
+
+/* =========================
+HERO SECTION
+========================= */
+
+.dress-hero {
+min-height: 650px;
+display: flex;
+align-items: center;
+padding: 80px 10%;
+background: #e9ddd2;
+}
+
+.dress-hero-content {
+max-width: 600px;
+}
+
+.dress-hero-content p {
+font-size: 13px;
+letter-spacing: 4px;
+margin-bottom: 20px;
+}
+
+.dress-hero-content h1 {
+font-family: Georgia, serif;
+font-size: 72px;
+line-height: 1.05;
+font-weight: normal;
+margin-bottom: 25px;
+}
+
+.dress-hero-content span {
+display: block;
+max-width: 500px;
+font-size: 17px;
+line-height: 1.8;
+color: #555;
+margin-bottom: 35px;
+}
+
+/* Explore Collection Button */
+
+.dress-btn {
+display: inline-block;
+text-decoration: none;
+background: #222;
+color: white;
+padding: 16px 30px;
+font-size: 15px;
+transition: 0.3s;
+}
+
+.dress-btn:hover {
+background: #555;
+}
+
+/* =========================
+COLLECTION HEADING
+========================= */
+
+.dress-heading {
+text-align: center;
+padding: 90px 20px 45px;
+}
+
+.dress-heading p {
+font-size: 13px;
+letter-spacing: 4px;
+margin-bottom: 15px;
+}
+
+.dress-heading h2 {
+font-family: Georgia, serif;
+font-size: 45px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+
+.dress-heading span {
+display: block;
+max-width: 600px;
+margin: auto;
+color: #666;
+line-height: 1.7;
+}
+
+/* =========================
+FILTERS
+========================= */
+
+.dress-filters {
+display: flex;
+justify-content: center;
+gap: 12px;
+margin: 20px 0 55px;
+flex-wrap: wrap;
+}
+
+.dress-filters button {
+background: transparent;
+border: 1px solid #999;
+padding: 12px 22px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.dress-filters button:hover {
+background: #222;
+color: white;
+}
+
+/* =========================
+DRESS GRID
+========================= */
+
+.dress-grid {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+padding-bottom: 90px;
+}
+
+/* =========================
+DRESS CARD
+========================= */
+
+.dress-card {
+background: white;
+overflow: hidden;
+transition: 0.3s;
+}
+
+.dress-card:hover {
+transform: translateY(-5px);
+}
+
+.dress-image {
+position: relative;
+width: 100%;
+height: 430px;
+overflow: hidden;
+}
+
+.dress-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.dress-image span {
+position: absolute;
+top: 15px;
+left: 15px;
+background: #222;
+color: white;
+padding: 7px 12px;
+font-size: 11px;
+letter-spacing: 1px;
+}
+
+/* =========================
+DRESS INFORMATION
+========================= */
+
+.dress-info {
+padding: 22px;
+}
+
+.dress-info p {
+font-size: 12px;
+color: #888;
+letter-spacing: 1px;
+margin-bottom: 8px;
+}
+
+.dress-info h3 {
+font-family: Georgia, serif;
+font-size: 22px;
+font-weight: normal;
+margin-bottom: 12px;
+}
+
+.dress-info strong {
+font-size: 16px;
+}
+
+/* =========================
+BANNER
+========================= */
+
+.dress-banner {
+min-height: 430px;
+display: flex;
+align-items: center;
+padding: 70px 10%;
+background: #D8B7B5;
+}
+
+.dress-banner p {
+font-size: 13px;
+letter-spacing: 4px;
+margin-bottom: 20px;
+}
+
+.dress-banner h2 {
+font-family: Georgia, serif;
+font-size: 55px;
+line-height: 1.1;
+font-weight: normal;
+margin-bottom: 30px;
+}
+
+.dress-banner a {
+display: inline-block;
+text-decoration: none;
+color: #222;
+border-bottom: 1px solid #222;
+padding-bottom: 5px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.dress-footer {
+background: #222;
+color: white;
+text-align: center;
+padding: 60px 20px;
+}
+
+.dress-footer h2 {
+font-size: 28px;
+letter-spacing: 5px;
+margin-bottom: 18px;
+}
+
+.dress-footer p {
+color: #ccc;
+margin-bottom: 15px;
+}
+
+.dress-copy {
+font-size: 12px;
+margin-top: 30px;
+}
+/* Discover More Button */
+
+.discover-btn {
+    display: inline-block;
+    text-decoration: none;
+    background:white;
+    color: white;
+    padding: 16px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.discover-btn:hover {
+    background: #555;
+}
+/* Explore Dresses Button */
+
+.dress-btn {
+    display: inline-block;
+    text-decoration: none;
+    background:white;
+    color:#222;
+    padding: 16px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dress-btn:hover {
+    background: #555;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {}
+
+.dress-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dress-hero-content h1 {
+    font-size: 55px;
+
+
+}
+
+@media (max-width: 600px) {
+
+.home-header {
+    padding: 0 20px;
+}
+
+.home-logo {
+    font-size: 22px;
+}
+
+.dress-hero {
+    min-height: 550px;
+    padding: 60px 25px;
+}
+
+.dress-hero-content h1 {
+    font-size: 45px;
+}
+
+.dress-heading h2 {
+    font-size: 35px;
+}
+
+.dress-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+}
+
+.dress-image {
+    height: 450px;
+}
+
+.dress-banner {
+    padding: 60px 25px;
+}
+
+.dress-banner h2 {
+    font-size: 40px;
+}
+
+.side-menu {
+    width: 280px;
+}
+
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .home-header {
+        height: 65px;
+
+        padding: 0 20px;
+    }
+
+    .home-logo {
+        font-size: 20px;
+    }
+
+    .home-nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .dress-hero {
+        min-height: 400px;
+
+        padding: 55px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .dress-collection {
+        padding: 55px 20px;
+    }
+
+    .collection-heading h2 {
+        font-size: 32px;
+    }
+
+    .dress-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .dress-image {
+        height: 450px;
+    }
+
+    .dress-banner {
+        padding: 55px 25px;
+    }
+
+    .dress-banner h2 {
+        font-size: 35px;
+    }
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-btn {
+    display: block;
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 30px;
+
+    color: #333;
+
+    cursor: pointer;
+
+    padding: 5px 10px;
+}
+
+
+/* =========================
+   SIDE MENU
+========================= */
+
+.side-menu {
+    position: fixed;
+
+    top: 0;
+    right: -300px;
+
+    width: 280px;
+    height: 100vh;
+
+    background: #f7f7f5;
+
+    padding: 80px 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.12);
+
+    z-index: 2000;
+
+    transition: right 0.4s ease;
+}
+
+
+/* MENU OPEN */
+
+.side-menu.active {
+    right: 0;
+}
+
+
+/* MENU LINKS */
+
+.side-menu a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 17px;
+
+    padding: 12px 5px;
+
+    border-bottom: 1px solid #ddd;
+
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #9b7777;
+
+    padding-left: 12px;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-btn {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 32px;
+
+    color: #333;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .home-header {
+        padding: 0 20px;
+    }
+
+    .side-menu {
+        width: 270px;
+    }
+
+}
+}
+/* =================================
+   GLAMORA BAGS PAGE
+================================= */
+
+.bag-header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#D8B7B5;
+    border-bottom: 1px solid #eee;
+}
+
+.bag-logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.bag-header nav {
+    display: flex;
+    gap: 28px;
+}
+
+.bag-header nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.bag-header nav a:hover,
+.bag-header nav a.active {
+    color: #b05a72;
+}
+
+
+/* HERO */
+
+.bag-hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background-color:#D8B7B5;
+        
+}
+
+.bag-hero-content {
+    max-width: 580px;
+    color: white;
+}
+
+.bag-hero-content > p {
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.bag-hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
+
+.bag-hero span {
+    display: block;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.bag-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bag-btn:hover {
+    background: #b05a72;
+    color: white;
+}
+
+
+/* HEADING */
+
+.bag-heading {
+    text-align: center;
+    padding: 80px 20px 30px;
+}
+
+.bag-heading > p {
+    color: #b05a72;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.bag-heading h2 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.bag-heading span {
+    color: #777;
+}
+
+
+/* FILTERS */
+
+.bag-filters {
+    text-align: center;
+    padding: 20px 20px 50px;
+}
+
+.bag-filters button {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 11px 22px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bag-filters button:hover {
+    background: #b05a72;
+    color: white;
+    border-color: #b05a72;
+}
+
+
+/* BAG GRID */
+
+.bag-grid {
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding-bottom: 90px;
+}
+
+.bag-card {
+    background: white;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.bag-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.bag-image {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bag-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.bag-card:hover .bag-image img {
+    transform: scale(1.06);
+}
+
+.bag-image span {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #222;
+    color: white;
+    padding: 7px 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.bag-info {
+    padding: 22px 5px;
+}
+
+.bag-info p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.bag-info h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.bag-info strong {
+    font-size: 18px;
+}
+
+.bag-info a {
+    float: right;
+    text-decoration: none;
+    color: #b05a72;
+    font-size: 14px;
+}
+
+
+/* BANNER */
+
+.bag-banner {
+    min-height: 400px;
+    padding: 80px 9%;
+    display: flex;
+    align-items: center;
+
+    background-color: #D8B7B5;
+
+    color: white;
+}
+
+.bag-banner p {
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.bag-banner h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 15px 0 25px;
+}
+
+.bag-banner a {
+    display: inline-block;
+    padding: 13px 27px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+.bag-footer {
+    text-align: center;
+    padding: 55px 20px;
+    background: #191719;
+    color: white;
+}
+
+.bag-footer h2 {
+    letter-spacing: 5px;
+}
+
+.bag-footer p {
+    color: #bbb;
+}
+
+.bag-copy {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .bag-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bag-hero h1 {
+        font-size: 45px;
+    }
+
+    .bag-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .bag-header nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bag-hero {
+        min-height: 450px;
+    }
+
+    .bag-hero h1 {
+        font-size: 40px;
+    }
+
+    .bag-heading h2 {
+        font-size: 32px;
+    }
+
+    .bag-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =================================
+   GLAMORA SHOES PAGE
+================================= */
+
+.shoe-header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.shoe-logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.shoe-header nav {
+    display: flex;
+    gap: 28px;
+}
+
+.shoe-header nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.shoe-header nav a:hover,
+.shoe-header nav a.active {
+    color: #b05a72;
+}
+
+
+/* HERO */
+
+.shoe-hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    background-color: #D8B7B5;
+}
+
+.shoe-hero-content {
+    max-width: 580px;
+    color: white;
+}
+
+.shoe-hero-content > p {
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.shoe-hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
+
+.shoe-hero span {
+    display: block;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.shoe-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.shoe-btn:hover {
+    background: #b05a72;
+    color: white;
+}
+
+
+/* HEADING */
+
+.shoe-heading {
+    text-align: center;
+    padding: 80px 20px 30px;
+}
+
+.shoe-heading > p {
+    color: #b05a72;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.shoe-heading h2 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.shoe-heading span {
+    color: #777;
+}
+
+
+/* FILTERS */
+
+.shoe-filters {
+    text-align: center;
+    padding: 20px 20px 50px;
+}
+
+.shoe-filters button {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 11px 22px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shoe-filters button:hover {
+    background: #b05a72;
+    color: white;
+    border-color: #b05a72;
+}
+
+
+/* PRODUCTS */
+
+.shoe-grid {
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding-bottom: 90px;
+}
+
+.shoe-card {
+    background: white;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.shoe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.shoe-image {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shoe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.shoe-card:hover .shoe-image img {
+    transform: scale(1.06);
+}
+
+.shoe-image span {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #222;
+    color: white;
+    padding: 7px 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.shoe-info {
+    padding: 22px 5px;
+}
+
+.shoe-info p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.shoe-info h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.shoe-info strong {
+    font-size: 18px;
+}
+
+.shoe-info a {
+    float: right;
+    text-decoration: none;
+    color: #b05a72;
+    font-size: 14px;
+}
+
+
+/* BOTTOM BANNER */
+
+.shoe-banner {
+    min-height: 400px;
+    padding: 80px 9%;
+    display: flex;
+    align-items: center;
+
+    background-color: #D8B7B5;
+
+    color: white;
+}
+
+.shoe-banner p {
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.shoe-banner h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 15px 0 25px;
+}
+
+.shoe-banner a {
+    display: inline-block;
+    padding: 13px 27px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+.shoe-footer {
+    text-align: center;
+    padding: 55px 20px;
+    background: #191719;
+    color: white;
+}
+
+.shoe-footer h2 {
+    letter-spacing: 5px;
+}
+
+.shoe-footer p {
+    color: #bbb;
+}
+
+.shoe-copy {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .shoe-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .shoe-hero h1 {
+        font-size: 45px;
+    }
+
+    .shoe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .shoe-header nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .shoe-hero {
+        min-height: 450px;
+    }
+
+    .shoe-hero h1 {
+        font-size: 40px;
+    }
+
+    .shoe-heading h2 {
+        font-size: 32px;
+    }
+
+    .shoe-grid {
+        grid-template-columns: 1fr;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f7f2ed;
+color: #222;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.home-header {
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 60px;
+background: #f7f2ed;
+}
+
+.home-logo {
+font-size: 28px;
+font-weight: bold;
+letter-spacing: 4px;
+}
+
+.menu-btn {
+background: #222;
+color: white;
+border: none;
+padding: 12px 22px;
+font-size: 15px;
+cursor: pointer;
+}
+
+.menu-btn:hover {
+background: #555;
+}
+
+/* =========================
+SIDE MENU
+========================= */
+
+.side-menu {
+position: fixed;
+top: 0;
+right: -320px;
+width: 320px;
+height: 100vh;
+background: #fff;
+padding: 30px;
+z-index: 1000;
+box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+transition: 0.4s ease;
+}
+
+.side-menu.open {
+right: 0;
+}
+
+.side-menu h2 {
+margin: 45px 0 30px;
+letter-spacing: 3px;
+}
+
+.side-menu a {
+display: block;
+text-decoration: none;
+color: #222;
+font-size: 17px;
+padding: 14px 0;
+border-bottom: 1px solid #eee;
+}
+
+.side-menu a:hover {
+padding-left: 8px;
+}
+
+.close-btn {
+position: absolute;
+right: 25px;
+top: 20px;
+background: none;
+border: none;
+font-size: 25px;
+cursor: pointer;
+}
+
+/* =========================
+SUNGLASSES HERO
+========================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-content h5 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+/* Explore Sunglasses Button */
+
+.sunglasses-btn {
+display: inline-block;
+text-decoration: none;
+background: #222;
+color: white;
+padding: 16px 30px;
+font-size: 15px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.sunglasses-btn:hover {
+background: #555;
+}
+
+/* =========================
+COLLECTION HEADING
+========================= */
+
+.sunglasses-heading {
+text-align: center;
+padding: 90px 20px 45px;
+}
+
+.sunglasses-heading p {
+font-size: 13px;
+letter-spacing: 4px;
+margin-bottom: 15px;
+}
+
+.sunglasses-heading h2 {
+font-family: Georgia, serif;
+font-size: 45px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+
+.sunglasses-heading span {
+display: block;
+max-width: 600px;
+margin: auto;
+color: #666;
+line-height: 1.7;
+}
+
+/* =========================
+FILTERS
+========================= */
+
+.sunglasses-filters {
+display: flex;
+justify-content: center;
+gap: 12px;
+margin: 20px 0 55px;
+flex-wrap: wrap;
+}
+
+.sunglasses-filters button {
+background: transparent;
+border: 1px solid #999;
+padding: 12px 22px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.sunglasses-filters button:hover {
+background: #222;
+color: white;
+}
+
+/* =========================
+SUNGLASSES GRID
+========================= */
+
+.sunglasses-grid {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+padding-bottom: 90px;
+}
+
+/* =========================
+SUNGLASSES CARD
+========================= */
+
+.sunglasses-card {
+background: white;
+overflow: hidden;
+transition: 0.3s;
+}
+
+.sunglasses-card:hover {
+transform: translateY(-5px);
+}
+
+.sunglasses-image {
+position: relative;
+width: 100%;
+height: 430px;
+overflow: hidden;
+}
+
+.sunglasses-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.sunglasses-image span {
+position: absolute;
+top: 15px;
+left: 15px;
+background: #222;
+color: white;
+padding: 7px 12px;
+font-size: 11px;
+letter-spacing: 1px;
+}
+
+/* =========================
+PRODUCT INFORMATION
+========================= */
+
+.sunglasses-info {
+padding: 22px;
+}
+
+.sunglasses-info p {
+font-size: 12px;
+color: #888;
+letter-spacing: 1px;
+margin-bottom: 8px;
+}
+
+.sunglasses-info h3 {
+font-family: Georgia, serif;
+font-size: 22px;
+font-weight: normal;
+margin-bottom: 12px;
+}
+
+.sunglasses-info strong {
+font-size: 16px;
+}
+
+/* =========================
+BANNER
+========================= */
+
+.sunglasses-banner {
+min-height: 430px;
+display: flex;
+align-items: center;
+padding: 70px 10%;
+background: #d9c8ba;
+}
+
+.sunglasses-banner p {
+font-size: 13px;
+letter-spacing: 4px;
+margin-bottom: 20px;
+}
+
+.sunglasses-banner h2 {
+font-family: Georgia, serif;
+font-size: 55px;
+line-height: 1.1;
+font-weight: normal;
+margin-bottom: 30px;
+}
+
+/* =========================
+DISCOVER MORE BUTTON
+========================= */
+
+.discover-btn {
+display: inline-block;
+text-decoration: none;
+background:white;
+color:black;
+padding: 16px 30px;
+font-size: 15px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.discover-btn:hover {
+background: #555;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.sunglasses-footer {
+background: #222;
+color: white;
+text-align: center;
+padding: 60px 20px;
+}
+
+.sunglasses-footer h2 {
+font-size: 28px;
+letter-spacing: 5px;
+margin-bottom: 18px;
+}
+
+.sunglasses-footer p {
+color: #ccc;
+margin-bottom: 15px;
+}
+
+.sunglasses-copy {
+font-size: 12px;
+margin-top: 30px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+
+.sunglasses-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sunglasses-hero-content h1 {
+    font-size: 55px;
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+
+.home-header {
+    padding: 0 20px;
+}
+
+.home-logo {
+    font-size: 22px;
+}
+
+.sunglasses-hero {
+    min-height: 550px;
+    padding: 60px 25px;
+}
+
+.sunglasses-hero-content h1 {
+    font-size: 45px;
+}
+
+.sunglasses-heading h2 {
+    font-size: 35px;
+}
+
+.sunglasses-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+}
+
+.sunglasses-image {
+    height: 450px;
+}
+
+.sunglasses-banner {
+    padding: 60px 25px;
+}
+
+.sunglasses-banner h2 {
+    font-size: 40px;
+}
+
+.side-menu {
+    width: 280px;
+}
+
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .sunglasses-hero h1 {
+        font-size: 45px;
+    }
+
+    .sunglasses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sunglasses-hero {
+        min-height: 450px;
+    }
+
+    .sunglasses-hero h1 {
+        font-size: 40px;
+    }
+
+    .sunglasses-heading h2 {
+        font-size: 32px;
+    }
+
+    .sunglasses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sunglasses-banner h2 {
+        font-size: 38px;
+    }
+}
+/* =================================
+   GLAMORA WATCHES PAGE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D8B7B5;
+    color: #222;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.home-header {
+    width: 100%;
+    padding: 22px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #D8B7B5;
+}
+
+.home-logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #222;
+}
+
+.menu-btn {
+    background: white;
+    color: #222;
+
+    border: none;
+
+    padding: 11px 20px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #b05a72;
+    color: white;
+}
+
+
+/* =================================
+   SIDE MENU
+================================= */
+
+.side-menu {
+    position: fixed;
+
+    top: 0;
+    right: -300px;
+
+    width: 280px;
+    height: 100vh;
+
+    background-color: white;
+
+    padding: 70px 30px;
+
+    z-index: 999;
+
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+
+    transition: 0.4s;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.side-menu h2 {
+    letter-spacing: 4px;
+
+    margin-bottom: 35px;
+}
+
+.side-menu a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 16px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #b05a72;
+
+    padding-left: 8px;
+}
+
+.close-btn {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    background: none;
+
+    border: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    color: #222;
+}
+
+
+/* =================================
+   WATCH HERO
+================================= */
+
+.dress-hero {
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background-color: #D8B7B5;
+}
+
+.dress-hero-content {
+    max-width: 580px;
+
+    color: white;
+}
+
+.dress-hero-content .small-title {
+    letter-spacing: 5px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+.dress-hero h1 {
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    margin-bottom: 22px;
+}
+
+.dress-hero-content > p:not(.small-title) {
+    display: block;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   EXPLORE COLLECTION BUTTON
+================================= */
+
+.watch-btn {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background-color: white;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.watch-btn:hover {
+    background-color: #b05a72;
+
+    color: white;
+}
+
+
+/* =================================
+   WATCH COLLECTION HEADING
+================================= */
+
+.watch-heading {
+    text-align: center;
+
+    padding: 80px 20px 30px;
+
+    background-color: #D8B7B5;
+}
+
+.watch-heading > p {
+    color: white;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+.watch-heading h2 {
+    font-size: 42px;
+
+    margin: 12px 0;
+
+    color: white;
+}
+
+.watch-heading span {
+    display: block;
+
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   CATEGORY BUTTONS
+================================= */
+
+.Watch-filters {
+    text-align: center;
+
+    padding: 20px 20px 50px;
+
+    background-color: #D8B7B5;
+}
+
+.watch-filters button {
+    border: 1px solid #ddd;
+
+    background-color: white;
+
+    padding: 11px 22px;
+
+    margin: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.watch-filters button:hover {
+    background-color: #b05a72;
+
+    color: white;
+
+    border-color: #b05a72;
+}
+
+
+/* =================================
+   WATCH GRID
+================================= */
+
+.watch-grid {
+    width: 86%;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+    padding-bottom: 90px;
+
+    background-color: #D8B7B5;
+}
+
+.watch-card {
+    background-color: white;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.watch-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+
+/* =================================
+   WATCH IMAGE
+================================= */
+
+.watch-image {
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.watch-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.watch-card:hover .dress-image img {
+    transform: scale(1.06);
+}
+
+
+/* =================================
+   NEW / POPULAR LABEL
+================================= */
+
+.watch-image span {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 7px 12px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =================================
+   WATCH INFORMATION
+================================= */
+
+.watch-info {
+    padding: 22px 5px;
+
+    background-color: white;
+}
+
+.watch-info p {
+    color: #999;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+.watch-info h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.watch-info strong {
+    font-size: 18px;
+}
+
+
+/* =================================
+   BOTTOM BANNER
+================================= */
+
+.watch-banner {
+    min-height: 400px;
+
+    padding: 80px 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #D8B7B5;
+
+    color: white;
+}
+
+.watch-banner p {
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+.watch-banner h2 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin: 15px 0 25px;
+}
+
+.watch-banner a {
+    display: inline-block;
+
+    padding: 13px 27px;
+
+    background-color: white;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.watch-banner a:hover {
+    background-color: #b05a72;
+
+    color: white;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.watch-footer {
+    text-align: center;
+
+    padding: 55px 20px;
+
+    background-color: #191719;
+
+    color: white;
+}
+
+.watch-footer h2 {
+    letter-spacing: 5px;
+}
+
+.watch-footer p {
+    color: #bbb;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    font-size: 13px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .watch-hero h1 {
+        font-size: 45px;
+    }
+
+    .watch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .watch-hero {
+        min-height: 450px;
+    }
+
+    .watch-hero h1 {
+        font-size: 40px;
+    }
+
+    .watch-heading h2 {
+        font-size: 32px;
+    }
+
+    .Watch-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =================================
+   GLAMORA CONTACT PAGE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D8B7B5;
+    color: #222;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.home-header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D8B7B5;
+}
+
+.home-logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #222;
+}
+
+.menu-btn {
+    background: white;
+    color: #222;
+    border: none;
+    padding: 11px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #b05a72;
+    color: white;
+}
+
+
+/* =================================
+   SIDE MENU
+================================= */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+
+    width: 280px;
+    height: 100vh;
+
+    background: white;
+
+    padding: 70px 30px;
+
+    box-sizing: border-box;
+
+    z-index: 999;
+
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+
+    transition: 0.4s;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.side-menu h2 {
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+.side-menu a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 16px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #b05a72;
+    padding-left: 8px;
+}
+
+.close-btn {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    color: #222;
+}
+
+
+/* =================================
+   CONTACT HERO
+================================= */
+
+.contact-hero {
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background-color: #D8B7B5;
+
+    color: white;
+}
+
+.contact-hero-content {
+    max-width: 580px;
+}
+
+.contact-hero-content > p {
+    letter-spacing: 5px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+.contact-hero h1 {
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    margin-bottom: 22px;
+}
+
+.contact-hero span {
+    display: block;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   CONTACT HEADING
+================================= */
+
+.contact-heading {
+    text-align: center;
+
+    padding: 80px 20px 30px;
+
+    background-color: #D8B7B5;
+
+    color: white;
+}
+
+.contact-heading > p {
+    color: #b05a72;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+.contact-heading h2 {
+    font-size: 42px;
+
+    margin: 12px 0;
+
+    color: white;
+}
+
+.contact-heading span {
+    color: white;
+
+    font-size: 16px;
+}
+
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact-section {
+    width: 86%;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    padding: 50px 0 90px;
+
+    background-color: #D8B7B5;
+}
+
+
+/* =================================
+   CONTACT INFORMATION
+================================= */
+
+.contact-info {
+    background: white;
+
+    padding: 40px;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+
+    margin-bottom: 18px;
+}
+
+.contact-info > p {
+    color: #777;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h3 {
+    color: #b05a72;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 7px;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+
+/* =================================
+   CONTACT FORM
+================================= */
+
+.contact-form {
+    background: white;
+
+    padding: 40px;
+}
+
+.contact-form h2 {
+    font-size: 32px;
+
+    margin-bottom: 25px;
+}
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b05a72;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: fit-content;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    background: #b05a72;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #222;
+}
+
+
+/* =================================
+   BANNER
+================================= */
+
+.contact-banner {
+    min-height: 400px;
+
+    padding: 80px 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #D8B7B5;
+
+    color: white;
+}
+
+.contact-banner p {
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+.contact-banner h2 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin: 15px 0 25px;
+}
+
+.contact-banner a {
+    display: inline-block;
+
+    padding: 13px 27px;
+
+    background: white;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contact-banner a:hover {
+    background: #b05a72;
+
+    color: white;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.contact-footer {
+    text-align: center;
+
+    padding: 55px 20px;
+
+    background: #191719;
+
+    color: white;
+}
+
+.contact-footer h2 {
+    letter-spacing: 5px;
+}
+
+.contact-footer p {
+    color: #bbb;
+}
+
+.contact-copy {
+    margin-top: 25px;
+
+    font-size: 13px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .contact-hero h1 {
+        font-size: 45px;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        min-height: 450px;
+    }
+
+    .contact-hero h1 {
+        font-size: 40px;
+    }
+
+    .contact-heading h2 {
+        font-size: 32px;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-banner h2 {
+        font-size: 38px;
+    }
+}
+
